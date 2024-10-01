@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛБ3</title>
+</head>
+<body>
+<h1>Регистрация на турнир по игре "Что? Где? Когда?"</h1>
+<form action="/submit_form" method="post">
+  <fieldset>
+    <legend>Личные сведения</legend>
+
+    <label for="name">ФИО капитана:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="name">Название команды:</label>
+    <input type="text" id="text" name="text" required><br><br>
+
+    <label for="phone">Контактный телефон:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="email">Электронная почта представителя:</label>
+    <input type="email" id="email" name="emale" required><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Дополнительная информация</legend>
+
+    <label for="news">Отслеживать новости БЛИК:</label>
+    <input type="checkbox" id="news" name="news"><br><br>
+
+    <label>В каких дисциплинах будете принимать участие?</label><br>
+    <input type="radio" id="all" name="all" value="all">
+    <label for="all">Все</label><br>
+    <input type="radio" id="WWW" name="WWW" value="WWW">
+    <label for="WWW">Что? Где? Когда?</label><br>
+    <input type="radio" id="BR" name="BR" value="BR">
+    <label for="BR">Брейн-ринг</label><br>
+    <input type="radio" id="EK" name="EK" value="EK">
+    <label for="EK">Эрудит-квартет</label><br><br>
+
+
+    <label for="list">Прикрепите список команды:</label>
+    <input type="file" id="list" name="list"><br><br>
+  </fieldset>
+
+  <input type="submit" value="Отослать">
+  <input type="reset" value="Заново">
+</form>
+</body>
+</html>
